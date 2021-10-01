@@ -1,0 +1,121 @@
+h1, h3 {
+    text-align: center;
+    margin-top: 0;
+}
+#page {
+    --head-height: 15%;
+}
+#head {
+    height: calc(var(--head-height) - 8px);
+}
+
+
+#column-container {
+    display: grid;
+    width: 90%;
+    padding: 5%;
+}
+
+.separator {
+    height: 100%;
+    background-color: black;
+    width: 2px;
+}
+.column {
+    height: 100%;
+    --margin: 2%;
+}
+.column-contents {
+    display: grid;
+}
+
+
+
+.task-card {
+    width: calc(100% - 4% - 4*var(--margin));
+    background-color: gray;
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    margin-bottom: var(--margin);
+    padding: 4%;
+
+    display: inline-grid;
+    grid-template-columns: 64% 18% 18%;
+
+    box-shadow: 2px 2px 10px 1px;
+}
+.task-title {
+    font-size: 48px;
+    line-height: normal;
+}
+.task-due-date {
+    font-size: 40px;
+    line-height: normal;
+}
+.task-text {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.task-button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task-button>.material-icons {
+    font-size: 96px;
+}
+
+
+.column-section {
+    margin-top: calc(5*var(--margin));
+    --font-size: 72;
+}
+.column-section-header {
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    margin-bottom: var(--margin);
+    height: 2em;
+    font-size: var(--font-size);
+    display: grid;
+    grid-template-columns: 64% 12% 12% 12%;
+}
+
+
+.column-section-header>* {
+    font-size: var(--font-size);
+    display: flex;
+    align-items: center;
+    
+}
+.column-section-header>.material-icons {
+    justify-content: center;
+}
+
+
+.new-section {
+    display: grid;
+    grid-template-columns: 46% 8% 46%;
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    margin-top: calc(5*var(--margin));
+}
+.new-section-line {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new-section-line>div {
+    background-color: black;
+    height: 4px;
+    width: 100%;
+}
+.new-section-symbol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new-section-symbol>span {
+    font-size: 84;
+}

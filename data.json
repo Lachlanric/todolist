@@ -1,0 +1,42 @@
+{
+	"users": [
+		{
+			"username": "Lachlan Richards",
+			"task_books": [
+				{
+					"title": "Uni Sem 2",
+					"sections": [
+						{
+							"name": "ECE2191",
+							"tasks": [
+								{
+									"name": "Pre-lecture Tasks",
+									"notes": "Due Monday",
+									"completed": false,
+									"submitted": false
+								}
+							]
+						},
+						{
+							"name": "PHS1002",
+							"tasks": [
+								{
+									"name": "Lab 1",
+									"notes": "Due Friday",
+									"completed": false,
+									"submitted": false
+								},
+								{
+									"name": "Assignment 2",
+									"notes": "Due Week 9 Friday (before midnight)",
+									"completed": false,
+									"submitted": false
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
