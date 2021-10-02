@@ -5,7 +5,7 @@ const fs = require("fs");
 const app = express();
 
 // Serve files
-app.use(express.static('./'));
+app.use(express.static('./public'));
 
 // Listen on port
 app.listen(1234, () => {
@@ -57,5 +57,3 @@ function overwriteData(data) {
 
 // data.users[0].task_books[0].sections[0].tasks[0].completed = false;
 // fs.writeFileSync('data.json', JSON.stringify(data, null, '\t'));
-
-// ye ok
